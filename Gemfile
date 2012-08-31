@@ -12,6 +12,7 @@ gem 'devise', '2.1.2'
 gem 'mysql2', '0.3.11'
 
 # Views
+gem 'simple_form', '2.0.2'
 gem 'slim', '1.2.2'
 
 
