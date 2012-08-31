@@ -24,14 +24,14 @@ group :assets do
 end
 
 group :development, :test do
-  gem 'quiet_assets', '1.0.1'
   gem 'rspec', '2.11.0'
   gem 'rspec-rails', '2.11.0'
-  gem 'sextant', '0.1.3'
 end
 
 group :development do
   gem 'bullet', '4.1.6'
   gem 'pry-debugger', '0.2.0'
   gem 'pry-rails', '0.2.1'
+  gem 'quiet_assets', '1.0.1'
+  gem 'sextant', '0.1.3'
 end
