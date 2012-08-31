@@ -24,6 +24,7 @@ group :assets do
 end
 
 group :development, :test do
+  gem 'quiet_assets', '1.0.1'
   gem 'rspec', '2.11.0'
   gem 'rspec-rails', '2.11.0'
 end
