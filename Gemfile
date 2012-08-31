@@ -6,6 +6,7 @@ gem 'rails', '3.2.8'
 gem 'jquery-rails', '2.1.1'
 
 # Controllers
+gem 'devise', '2.1.2'
 
 # Models
 gem 'mysql2', '0.3.11'
