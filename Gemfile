@@ -25,4 +25,6 @@ end
 
 group :development do
   gem 'bullet', '4.1.6'
+  gem 'pry-debugger', '0.2.0'
+  gem 'pry-rails', '0.2.1'
 end
