@@ -13,6 +13,7 @@ gem 'mysql2', '0.3.11'
 gem 'paperclip', '3.1.4'
 
 # Views
+gem 'jbuilder', '0.4.3'
 gem 'simple_form', '2.0.2'
 gem 'slim', '1.2.2'
 
