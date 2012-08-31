@@ -23,6 +23,11 @@ group :assets do
   gem 'uglifier', '1.2.7'
 end
 
+group :development, :test do
+  gem 'rspec', '2.11.0'
+  gem 'rspec-rails', '2.11.0'
+end
+
 group :development do
   gem 'bullet', '4.1.6'
   gem 'pry-debugger', '0.2.0'
