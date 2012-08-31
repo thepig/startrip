@@ -21,3 +21,7 @@ group :assets do
   gem 'sass-rails', '3.2.5'
   gem 'uglifier', '1.2.7'
 end
+
+group :development do
+  gem 'bullet', '4.1.6'
+end
