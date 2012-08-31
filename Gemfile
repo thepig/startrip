@@ -10,6 +10,7 @@ gem 'devise', '2.1.2'
 
 # Models
 gem 'mysql2', '0.3.11'
+gem 'paperclip', '3.1.4'
 
 # Views
 gem 'simple_form', '2.0.2'
