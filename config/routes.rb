@@ -4,6 +4,8 @@ Startrip::Application.routes.draw do
   namespace :api do
     namespace :v1 do
       get 'users/:username', to: 'users#show', as: :user
+
+      resources :authentications, only: [:create]
     end
   end
 end
