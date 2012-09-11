@@ -31,8 +31,16 @@ end
 
 group :development do
   gem 'bullet', '4.1.6'
+  gem 'capistrano', '2.13.3'
+  gem 'capistrano_colors', '0.5.5'
+  gem 'capistrano-ext', '1.2.1'
   gem 'pry-debugger', '0.2.0'
   gem 'pry-rails', '0.2.1'
   gem 'quiet_assets', '1.0.1'
+  gem 'rvm-capistrano', '1.2.7'
   gem 'sextant', '0.1.3'
+end
+
+group :production do
+  gem 'unicorn', '4.3.1'
 end
