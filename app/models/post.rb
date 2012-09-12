@@ -1,5 +1,5 @@
 class Post < ActiveRecord::Base
-  attr_accessible :body, :photo
+  attr_accessible :body, :latitude, :longitude, :photo
 
 
   belongs_to :user

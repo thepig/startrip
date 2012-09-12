@@ -11,17 +11,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120909133439) do
+ActiveRecord::Schema.define(:version => 20120912211237) do
 
   create_table "posts", :force => true do |t|
-    t.integer  "user_id",            :null => false
-    t.string   "body",               :null => false
-    t.string   "photo_file_name",    :null => false
-    t.string   "photo_content_type", :null => false
-    t.integer  "photo_file_size",    :null => false
-    t.datetime "photo_updated_at",   :null => false
-    t.datetime "created_at",         :null => false
-    t.datetime "updated_at",         :null => false
+    t.integer  "user_id",                                            :null => false
+    t.string   "body",                                               :null => false
+    t.string   "photo_file_name",                                    :null => false
+    t.string   "photo_content_type",                                 :null => false
+    t.integer  "photo_file_size",                                    :null => false
+    t.decimal  "latitude",           :precision => 15, :scale => 12
+    t.decimal  "longitude",          :precision => 15, :scale => 12
+    t.datetime "photo_updated_at",                                   :null => false
+    t.datetime "created_at",                                         :null => false
+    t.datetime "updated_at",                                         :null => false
   end
 
   create_table "users", :force => true do |t|
