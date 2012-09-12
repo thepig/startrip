@@ -31,7 +31,7 @@ namespace :deploy do
   end
   
   task :stop, roles: :app do
-    run "kill -KILL -s QUIT `cat #{shared_path}/pids/unicorn.pid`"
+    run "if [ -f '#{shared_path}/pids/unicorn.pid' ]; then kill -KILL -s QUIT `cat #{shared_path}/pids/unicorn.pid`; fi"
   end
 
   task :restart, roles: :app do
