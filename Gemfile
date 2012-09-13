@@ -9,6 +9,7 @@ gem 'jquery-rails', '2.1.1'
 gem 'devise', '2.1.2'
 
 # Models
+gem 'kaminari', '0.14.1'
 gem 'mysql2', '0.3.11'
 gem 'paperclip', '3.1.4'
 
