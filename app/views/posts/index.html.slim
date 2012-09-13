@@ -4,8 +4,12 @@
 ul.posts
   - @posts.each do |post|
     li
-      p = post.user.username
+      p
+        = post.user.username
+        - if post.latitude? && post.longitude?
+          = " @(#{post.latitude.round(3)}, #{post.longitude.round(3)})"
       = image_tag post.photo.url(:thumb)
       p = post.body
+      p #{time_ago_in_words(post.created_at)} (#{post.created_at.strftime('%Y/%m/%d %H:%M:%S')})
 
 = paginate @posts
