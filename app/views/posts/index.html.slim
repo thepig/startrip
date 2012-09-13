@@ -7,3 +7,5 @@ ul.posts
       p = post.user.username
       = image_tag post.photo.url(:thumb)
       p = post.body
+
+= paginate @posts
