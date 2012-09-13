@@ -6,7 +6,7 @@ Startrip::Application.routes.draw do
       get 'users/:username', to: 'users#show', as: :user
 
       resources :authentications, only: [:create]
-      resources :posts, only: [:create]
+      resources :posts, only: [:create, :index]
     end
   end
 end
